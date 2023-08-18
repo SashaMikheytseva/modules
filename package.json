@@ -1,0 +1,25 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "1. Каждая задача выполняется в виде отдельного проекта с собственным репозиторием на GitHub.\r 2. На эти задачи не распространяется требование отсутствия ошибок в ESLint, но вы можете его запустить и изучить появившиеся ошибки.\r 3. Решения должны быть построены на базе [шаблона webpack](/ci-template) (для задач под номерами 1 и 2).",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server dist",
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sasha",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "http-server": "^14.1.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
